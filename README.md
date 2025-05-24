@@ -16,11 +16,11 @@ UAVSAR data is provided in one of two formats. The first is a slant-range produc
 
 The Python script requires 3 command line option inputs:
 
-    -i <br /> – INPUT TXT FILE: The image parameters text file which is parsed by the script
+**_-i_** – INPUT TXT FILE: The image parameters text file which is parsed by the script
 
-‘-r’ – INPUT RADAR FILE: The input radar UAVSAR image in ‘.grd’ format. The image file is not opened or processed in any way but is used merely to create a header file with a name that matches the radar image
+**_-r_** – INPUT RADAR FILE: The input radar UAVSAR image in ‘.grd’ format. The image file is not opened or processed in any way but is used merely to create a header file with a name that matches the radar image
 
-‘-p’ – IMAGE POLARIZATION: The polarization of the scene is required as cross-pol and co-pol imagery will have different data types. The co-pol imagery is floating point whilst the cross-pol imagery is complex
+**_-p_** – IMAGE POLARIZATION: The polarization of the scene is required as cross-pol and co-pol imagery will have different data types. The co-pol imagery is floating point whilst the cross-pol imagery is complex
 
 For example to create a header file for HHHH data:
 
