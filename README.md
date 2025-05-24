@@ -24,7 +24,7 @@ The Python script requires 3 command line option inputs:
 
 For example to create a header file for HHHH data:
 
-    python BuildUAVSARhdr.py \
+    python UAVSARhdr.py \
          -i SMAP13_33010_14112_011_140814_L090_CX_01.ann.txt \
          -r SMAP13_33010_14112_011_140814_L090HHHH_CX_01.grd \
          -p HHHH
