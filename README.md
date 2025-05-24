@@ -1,6 +1,6 @@
 # UAVSARhdr
 
-UAVSARhdr is a simple python script to create a header file to accompany orthorectified UAVSAR binary images. A blog post describing its purpose and use was first written in 2014 ([here](https://spectraldifferences.wordpress.com/2014/09/29/envi-header-uavsar/)) and has updated where necessary and provided below.
+UAVSARhdr is a simple python script to create a header file to accompany orthorectified UAVSAR binary images. A blog post describing its purpose and use was first written in 2014 and has ben updated where necessary and is provided below.
 
 ## Basic Usage
 
@@ -21,7 +21,11 @@ For example to create a header file for HHHH data:
 
 Once run, a header file is output into the same directory as the input radar file.
 
-===========================================================================================================
+=======================================================================================================
+
+# Original article
+
+Original artcile source: ([here](https://spectraldifferences.wordpress.com/2014/09/29/envi-header-uavsar/))
 
 UAVSAR (Uninhabited Aerial Vehicle Synthetic Aperture Radar) is a high reolution (5m) L-band quad-pol SAR designed, built and operated by the Suborbital Radar and Science Engineering group at the NASA/Caltech Jet Propulsion Laboratory (JPL). Despite being ‘Uninhabited’ by name, UAVSAR is operated by a small team of radar operators aboard a Gulfstream-III twin-engine aircraft. The role of UAVSAR is to collect radar data for a wide range of scientific applications and to provide on-demand imagery over specific regions following natural/environmental disasters, such as earthquakes. More information on UAVSAR can be found at [uavsar.jpl.nasa.gov](uavsar.jpl.nasa.gov).
 
