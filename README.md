@@ -16,7 +16,7 @@ UAVSAR data is provided in one of two formats. The first is a slant-range produc
 
 The Python script requires 3 command line option inputs:
 
-‘-i’ – INPUT TXT FILE: The image parameters text file which is parsed by the script
+    -i <br /> – INPUT TXT FILE: The image parameters text file which is parsed by the script
 
 ‘-r’ – INPUT RADAR FILE: The input radar UAVSAR image in ‘.grd’ format. The image file is not opened or processed in any way but is used merely to create a header file with a name that matches the radar image
 
