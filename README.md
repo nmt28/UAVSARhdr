@@ -25,7 +25,7 @@ Once run, a header file is output into the same directory as the input radar fil
 
 # Original article
 
-Original artcile source: ([here](https://spectraldifferences.wordpress.com/2014/09/29/envi-header-uavsar/))
+[Original article here](https://spectraldifferences.wordpress.com/2014/09/29/envi-header-uavsar/))
 
 UAVSAR (Uninhabited Aerial Vehicle Synthetic Aperture Radar) is a high reolution (5m) L-band quad-pol SAR designed, built and operated by the Suborbital Radar and Science Engineering group at the NASA/Caltech Jet Propulsion Laboratory (JPL). Despite being ‘Uninhabited’ by name, UAVSAR is operated by a small team of radar operators aboard a Gulfstream-III twin-engine aircraft. The role of UAVSAR is to collect radar data for a wide range of scientific applications and to provide on-demand imagery over specific regions following natural/environmental disasters, such as earthquakes. More information on UAVSAR can be found at [uavsar.jpl.nasa.gov](uavsar.jpl.nasa.gov).
 
