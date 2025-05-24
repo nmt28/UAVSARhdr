@@ -1,6 +1,25 @@
 # UAVSARhdr
 
-UAVSARhdr is a simple python script to create a header file to accompany orthorectified UAVSAR binary images. A blog post describing its purpose and use was first written in 2014 ([here](https://spectraldifferences.wordpress.com/2014/09/29/envi-header-uavsar/)) and has updated where necessary and provided below:
+UAVSARhdr is a simple python script to create a header file to accompany orthorectified UAVSAR binary images. A blog post describing its purpose and use was first written in 2014 ([here](https://spectraldifferences.wordpress.com/2014/09/29/envi-header-uavsar/)) and has updated where necessary and provided below.
+
+## Basic Usage
+
+UAVSAR data is provided in grid (.grd) format without accompanying header file. To automatically generate one UAVSARhdr.py has been written. The Python script requires 3 command line option inputs:
+
+**_-i_** – INPUT TXT FILE: The image parameters text file which is parsed by the script
+
+**_-r_** – INPUT RADAR FILE: The input radar UAVSAR image in ‘.grd’ format. The image file is not opened or processed in any way but is used merely to create a header file with a name that matches the radar image
+
+**_-p_** – IMAGE POLARIZATION: The polarization of the scene is required as cross-pol and co-pol imagery will have different data types. The co-pol imagery is floating point whilst the cross-pol imagery is complex
+
+For example to create a header file for HHHH data:
+
+    python UAVSARhdr.py \
+         -i SMAP13_33010_14112_011_140814_L090_CX_01.ann.txt \
+         -r SMAP13_33010_14112_011_140814_L090HHHH_CX_01.grd \
+         -p HHHH
+
+Once run, a header file is output into the same directory as the input radar file.
 
 ===========================================================================================================
 
@@ -10,7 +29,7 @@ As UAVSAR is funded by the US government, all UAVSAR data is available to downlo
 
 Whilst the data is freely available to download, it is provided in grid (.grd) format without accompanying header file, limiting its immediate use within open source and preprioritory software. The data is provided with no means of building a header file, only an accompanying text file of the sensor parameters. Each file therefore, requires that either a header file is hand written or is built in preprioritory software, such as Excelis’ ENVI. Whilst this is achievable with little effort, it can become a laborious task when large quantities of data are required.
 
-To automatically generate header files a Python script (BuildUAVSARhdr.py) has been written. The script parses a parameters text file, which can be downloaded alongside the UAVSAR image, and selects the key parameters from it that are required to build an ENVI formatted header file. These parameters include the number of lines and samples and datatype of the image. Furthermore, the script also projects the image to a geographic lat/long co-ordinate system with the correct pixel spacing (5m). The script is designed to create header files for PolSAR data only.
+To automatically generate header files a Python script (UAVSARhdr.py) has been written. The script parses a parameters text file, which can be downloaded alongside the UAVSAR image, and selects the key parameters from it that are required to build an ENVI formatted header file. These parameters include the number of lines and samples and datatype of the image. Furthermore, the script also projects the image to a geographic lat/long co-ordinate system with the correct pixel spacing (5m). The script is designed to create header files for PolSAR data only.
 
 UAVSAR data is provided in one of two formats. The first is a slant-range product and the second is an orthorectified product. As the slant-range product is often only required by the specialist user, this post focuses on the more commonly used orthorectified product only.
 
